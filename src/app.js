@@ -1,3 +1,21 @@
+document.querySelector(".expertise-link").addEventListener("mouseenter", () => {
+    const dropdown = document.querySelector(".dropdown");
+    dropdown.style.visibility = "visible";
+    setTimeout(() => {
+        dropdown.style.opacity = "1";
+    }, 10);
+});
+
+document.querySelector(".drop-menu").addEventListener("mouseleave", () => {
+    const dropdown = document.querySelector(".dropdown");
+    dropdown.style.opacity = "0";
+    setTimeout(() => {
+        dropdown.style.visibility = "hidden"; 
+    }, 300);
+});
+
+
+
 
 function isInViewport(element) {
     const rect = element.getBoundingClientRect();
