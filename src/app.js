@@ -34,4 +34,6 @@ function typeWriting() {
     }
 }
 
-window.addEventListener('scroll', typeWriting);
+if (window.location.pathname === '/index.html') {
+    window.addEventListener('scroll', typeWriting);
+}
