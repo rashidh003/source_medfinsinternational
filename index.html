@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Home | MEDFINS</title>
 </head>
-<body class="bg-black">
-    <div id="preloader" class="bg-black z-30 absolute h-screen w-full flex justify-center items-center">
+<body class="bg-black" onload="hidePreloader()">
+    <div id="preloader" class="bg-black z-30 fixed h-screen w-full flex justify-center items-center">
       <img class="w-[15%]" src="./src/assets/logo/Medfins LOGO white.png" alt="">
     </div>
     <nav class="flex fixed z-10 justify-between items-center w-full bg-black px-10 py-7">
@@ -36,18 +36,17 @@
     </nav>
     <div class="flex herobg pb-20 bg-cover bg-center pt-52 flex-col px-52 justify-center items-start">
         <h1 class="text-white font-roboto mb-5 w-3/4 text-8xl">Together, we design medical devices that shape our future</h1>
-        <p class="text-xl mb-5 text-gray-300 w-3/4 font-bold font-ubuntu">CLEIO specializes in Strategy, Design, and Engineering. We harness our expertise to transform your innovative ideas into reality.</p>
+        <p class="text-xl mb-5 text-gray-300 w-3/4 font-bold font-ubuntu">MEDFINS specializes in Strategy, Design, and Engineering. We harness our expertise to transform your innovative ideas into reality.</p>
         <div class="flex w-3/4 items-center">
-            <button class="border-none glow-on-hover mr-6 px-5 py-3 rounded bg-white text-lg text-black font-bold">Discover MEDIFINS<i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
+            <button class="border-none glow-on-hover mr-6 px-5 py-3 rounded bg-white text-lg text-black font-bold"><a href="about.html">Discover MEDIFINS</a><i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
             <a href="./error.html" class="text-xl font-ubuntu font-bold underline text-white">Expolore Our Projects</a>
         </div>
     </div>
     <div class="flex flex-col w-full items-center justify-center p-32">
         <h1 class="type text-2xl font-roboto text-white">We push innovation boundaries by conneting the dots between humans and technology.</h1>
-        <!-- <p class="text-xl my-10 text-center font-ubuntu text-gray-300">With a human and empathetic approach, we transformed the art of creating new technologies.</p> -->
         <p class="text-2xl my-10 font-ubuntu text-gray-300">Whether you are a start-up that wants to turn a revolutionary idea into reality or an established organization looking for support, we support you at any stage to create high-performance medical devices that meet the real needs of your market and users.</p>
         <div class="flex w-full justify-center items-center">
-            <button class="border-none glow-on-hover mr-6 px-5 py-3 rounded bg-white text-lg text-black font-semibold">Our approach<i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
+            <button class="border-none glow-on-hover mr-6 px-5 py-3 rounded bg-white text-lg text-black font-semibold"><a href="error.html">Our approach</a><i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
             <a href="about.html" class="text-xl text-animation font-ubuntu font-bold text-gray-300">About Us<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
         </div>
     </div>
@@ -89,7 +88,7 @@
                 <div class="px-6 pb-5">
                   <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Innovation Strategy</h1>
                   <p class="text-gray-900 mb-5">User Research, Competitive Analysis, Value Proposition Definition & Cost Estimates</p>
-                  <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./error.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
+                  <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/inovationStrategy.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
@@ -100,7 +99,7 @@
                 <div class="px-6 pb-5">
                   <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Human Factors & Design</h1>
                   <p class="text-gray-900 mb-5">User Experience, User Interface, Brand Identity & Industrial Design  & Regulatory Compliance</p>
-                  <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./error.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
+                  <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/humanFactors&UserExperience.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
                 </div>
               </div>
             </div>
