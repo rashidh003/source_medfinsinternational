@@ -4,6 +4,19 @@ function hidePreloader() {
     preloader.style.display = "none";
 }
 
+function sendMail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "enquiry@medfinsinternational.com",
+        Password : "25DF615BEFD05E5AFF9E2E3448A1210C54B6",
+        To : 'info@medfinsinternational.com',
+        From : document.getElementById('email').value,
+        Subject : "new contact form enquiry",
+        Body : "Message: "+document.getElementById("message").value
+    }).then(
+        console.log("sent")
+    );
+}
 
 document.addEventListener("DOMContentLoaded",()=>{
 
