@@ -4,6 +4,21 @@ function hidePreloader() {
     preloader.style.display = "none";
 }
 
+const brotherhood = "25DF615BEFD05E5AFF9E2E3448A1210C54B6";
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "enquiry@medfinsinternational.com",
+        Password : brotherhood,
+        To : 'info@medfinsinternational.com',
+        From : document.getElementById('email').value,
+        Subject : "new contact form enquiry",
+        Body : "Message: "+document.getElementById("message").value
+    }).then(
+      message => alert(message)
+    );
+}
 
 document.addEventListener("DOMContentLoaded",()=>{
 
