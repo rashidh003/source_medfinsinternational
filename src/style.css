@@ -728,26 +728,6 @@ video {
   margin-top: 1.5rem;
 }
 
-.mt-36 {
-  margin-top: 9rem;
-}
-
-.mt-52 {
-  margin-top: 13rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-48 {
-  margin-top: 12rem;
-}
-
-.mr-20 {
-  margin-right: 5rem;
-}
-
 .block {
   display: block;
 }
@@ -897,10 +877,6 @@ video {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .min-w-full {
   min-width: 100%;
 }
@@ -919,10 +895,6 @@ video {
 
 .resize-none {
   resize: none;
-}
-
-.resize {
-  resize: both;
 }
 
 .list-disc {
@@ -1033,10 +1005,6 @@ video {
 
 .border-2 {
   border-width: 2px;
-}
-
-.border-t-2 {
-  border-top-width: 2px;
 }
 
 .border-none {
@@ -1203,6 +1171,10 @@ video {
   background-image: url('assets/images/Regulatory Affairs/office-4249404.jpg');
 }
 
+.bg-qualitysound {
+  background-image: url('assets/images/Product Development/modern-ultrasound-scanner-clinic.jpg');
+}
+
 .bg-softcoding {
   background-image: url('assets/images/Software Development/coding-1853305.jpg');
 }
@@ -1225,10 +1197,6 @@ video {
 
 .bg-uihero {
   background-image: url('assets/images/UI-Hero.jpg');
-}
-
-.bg-qualitysound {
-  background-image: url('assets/images/Product Development/modern-ultrasound-scanner-clinic.jpg');
 }
 
 .from-black {
@@ -1284,10 +1252,6 @@ video {
 
 .p-5 {
   padding: 1.25rem;
-}
-
-.p-7 {
-  padding: 1.75rem;
 }
 
 .px-10 {
@@ -1420,6 +1384,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
@@ -1434,10 +1402,6 @@ video {
 
 .pt-56 {
   padding-top: 14rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
 }
 
 .text-left {
@@ -1546,11 +1510,6 @@ video {
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -1878,25 +1837,18 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .hover\:text-gray-400:hover {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-@media (min-width: 768px) {
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
 }
 
