@@ -11,7 +11,7 @@ const banner = `
                                                                                                      
                                                                                                      
 `;
-console.log("made by");
+console.log("Developed by");
 console.log(banner);
 console.log("https://www.linkedin.com/in/mohammed-rashidh-999879253/");
 function hidePreloader() {
