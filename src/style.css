@@ -580,10 +580,6 @@ video {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -608,6 +604,10 @@ video {
   z-index: 30;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -621,6 +621,11 @@ video {
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-10 {
@@ -645,6 +650,10 @@ video {
 
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 
 .mb-\[1rem\] {
@@ -719,6 +728,26 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.mt-52 {
+  margin-top: 13rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-48 {
+  margin-top: 12rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -759,12 +788,24 @@ video {
   height: 19rem;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .h-\[25rem\] {
   height: 25rem;
 }
 
 .h-\[30rem\] {
   height: 30rem;
+}
+
+.h-\[33rem\] {
+  height: 33rem;
+}
+
+.h-\[35rem\] {
+  height: 35rem;
 }
 
 .h-\[37rem\] {
@@ -789,6 +830,10 @@ video {
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-2\/5 {
@@ -823,12 +868,20 @@ video {
   width: 18rem;
 }
 
+.w-\[23rem\] {
+  width: 23rem;
+}
+
 .w-\[25rem\] {
   width: 25rem;
 }
 
 .w-\[30rem\] {
   width: 30rem;
+}
+
+.w-\[35rem\] {
+  width: 35rem;
 }
 
 .w-auto {
@@ -918,6 +971,14 @@ video {
   gap: 0.25rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -934,6 +995,10 @@ video {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .rounded-3xl {
@@ -976,6 +1041,11 @@ video {
 
 .border-none {
   border-style: none;
+}
+
+.border-slate-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
 }
 
 .border-white {
@@ -1023,9 +1093,19 @@ video {
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-stone-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(214 211 209 / var(--tw-bg-opacity));
+}
+
+.bg-teal-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -1051,6 +1131,18 @@ video {
   background-image: url('assets/images/Regulatory Affairs/financial-managers-work.jpg');
 }
 
+.bg-electrichero {
+  background-image: url('assets/images/Electronics Engineering/soldering-7897827.jpg');
+}
+
+.bg-emmbedard {
+  background-image: url('assets/images/Electronics Engineering/pexels-alessandro-oliverio-1472443.jpg');
+}
+
+.bg-emmbedhero {
+  background-image: url('assets/images/Electronics Engineering/pexels-valentine-tanasovich-2588757.jpg');
+}
+
 .bg-gradient-to-l {
   background-image: linear-gradient(to left, var(--tw-gradient-stops));
 }
@@ -1067,12 +1159,60 @@ video {
   background-image: url('assets/images/Human Factors Engineering/social-media-2528410.jpg');
 }
 
+.bg-indusdoc {
+  background-image: url('assets/images/Product Development/doctor-monitoring-patient-s-pulse.jpg');
+}
+
+.bg-indushero {
+  background-image: url('assets/images/Product Development/anesthesia-device-5380074.jpg');
+}
+
 .bg-innohero {
   background-image: url('assets/images/Innovation Statergy/lightbulb-3449671.jpg');
 }
 
 .bg-innotech {
   background-image: url('assets/images/Innovation Statergy/technology-4256272.jpg');
+}
+
+.bg-manucnc {
+  background-image: url('assets/images/manuCNC.jpg');
+}
+
+.bg-manuhero {
+  background-image: url('assets/images/Manufacturing 4.0/industry-2630319.jpg');
+}
+
+.bg-mechdraw {
+  background-image: url('assets/images/Mechanical engineering/technical-drawing-3324368.jpg');
+}
+
+.bg-mechhero {
+  background-image: url('assets/images/Mechanical engineering/pexels-jeshootscom-834892.jpg');
+}
+
+.bg-mechpixel {
+  background-image: url('assets/images/Mechanical engineering/pexels-thirdman-5582867.jpg');
+}
+
+.bg-qualityhero {
+  background-image: url('assets/images/Regulatory Affairs/standard-quality-control-collage.jpg');
+}
+
+.bg-qualityoffice {
+  background-image: url('assets/images/Regulatory Affairs/office-4249404.jpg');
+}
+
+.bg-softcoding {
+  background-image: url('assets/images/Software Development/coding-1853305.jpg');
+}
+
+.bg-softhero {
+  background-image: url('assets/images/Software Development/programming-1873854.png');
+}
+
+.bg-softphone {
+  background-image: url('assets/images/Software Development/smartphone-6265047.jpg');
 }
 
 .bg-uibulb {
@@ -1085,6 +1225,10 @@ video {
 
 .bg-uihero {
   background-image: url('assets/images/UI-Hero.jpg');
+}
+
+.bg-qualitysound {
+  background-image: url('assets/images/Product Development/modern-ultrasound-scanner-clinic.jpg');
 }
 
 .from-black {
@@ -1252,6 +1396,14 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-64 {
+  padding-bottom: 16rem;
+}
+
+.pb-80 {
+  padding-bottom: 20rem;
+}
+
 .pb-96 {
   padding-bottom: 24rem;
 }
@@ -1280,8 +1432,20 @@ video {
   padding-top: 13rem;
 }
 
+.pt-56 {
+  padding-top: 14rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
 .text-left {
   text-align: left;
+}
+
+.text-end {
+  text-align: end;
 }
 
 .font-roboto {
@@ -1717,6 +1881,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
