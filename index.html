@@ -9,178 +9,205 @@
 </head>
 <body class="bg-black" onload="hidePreloader()">
     <div id="preloader" class="bg-black z-30 fixed h-screen w-full flex justify-center items-center">
-      <img class="w-[15%]" src="./src/assets/logo/Medfins LOGO white.png" alt="">
+      <img class="w-1/2 md:w-[15%]" src="./src/assets/logo/Medfins LOGO white.png" alt="">
     </div>
-    <nav class="flex fixed z-10 justify-between items-center w-full bg-black px-10 py-7">
-      <a href="./"><img src="./src/assets/logo/Medfins LOGO white.png" class="w-36 mr-10" alt="logo"></a>
-            <div class="links flex items-center justify-around relative">
-              <a href="./" class="p-2 text-gray-300 font-semibold text-l">Home</a>
-                <div class="drop-menu mx-5">
-                  <a href="#" class="p-2 text-gray-300 font-semibold expertise-link text-l">Expertise<i class="ml-1 fa-solid fa-arrow-down"></i></a>
-                  <div class="absolute dropdown flex flex-col w-[30rem] top-10 rounded-xl bg-black p-10 justify-center items-start">
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
-                    <a class="mb-[1rem] tracking-wide hover:text-white" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
-                  </div>
-                </div>
-              <a href="about.html" class="p-2 text-gray-300 font-semibold text-l">About</a>
+    <nav class="bg-black flex p-5 justify-between overflow-y-visible z-50 fixed w-full items-center md:px-10 md:py-7 ">
+      <img class="w-28 md:w-36" src="src/assets/logo/Medfins LOGO white.png" alt="img">
+      <div class="flex nav-part pt-20 p-10 h-screen z-50 fixed w-3/4 top-0 bg-zinc-900 text-white flex-col items-start md:hidden">
+          <span class="x-button text-zinc-400 absolute top-0 left-0 p-5"><i class="fa-solid fa-xl fa-xmark"></i></span>
+          <a class="mb-5" href="./">Home</a>
+          <div class="flex flex-col">
+              <a class="expertise mb-5" href="#">Expertise <i class="ml-1 fas fa-caret-down"></i></a>
+              <div class="ml-2 drop-down hidden mb-5 gap-2 text-white flex-col justify-center items-start">
+                <a class="hover:bg-zinc-500" href="./src/expertise/inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
+                <a class="hover:bg-zinc-500" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
+              </div>
+          </div>
+          <a href="about.html">About</a>
+      </div>
+      <div class="links hidden items-center justify-around relative md:flex">
+          <a href="./" class="p-2 text-gray-300 font-semibold text-xl">Home</a>
+            <div class="drop-menu mx-5">
+              <a href="#" class="p-2 text-gray-300 font-semibold expertise-link text-xl">Expertise</a>
+              <div class="absolute dropdown flex flex-col z-50 text-white w-[30rem] top-11 border-x-2 border-white rounded-xl bg-black p-10 justify-center items-start">
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
+                <a class="mb-[1rem] tracking-wide" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
+              </div>
             </div>
-        <button class="border-none font-roboto smooth-hover px-5 py-2 rounded hover:mb-2 bg-white text-lg text-black font-bold"><i class="fa-solid mr-1 fa-envelope"></i></i><a href="contact.html">Contact</a></button>
-    </nav>
-    <div class="flex herobg pb-20 bg-cover bg-center pt-52 flex-col px-52 justify-center items-start">
-        <h1 class="text-white font-roboto mb-5 w-3/4 text-8xl">Together, we design medical devices that shape our future</h1>
-        <p class="text-xl mb-5 text-gray-300 w-3/4 font-bold font-ubuntu">MEDFINS specializes in Strategy, Design, and Engineering. We harness our expertise to transform your innovative ideas into reality.</p>
+          <a href="about.html" class="p-2 text-gray-300 font-semibold text-xl">About</a>
+        </div>
+      <button class="hidden border-none z-20 font-roboto smooth-hover px-5 py-2 rounded hover:mb-2 bg-white text-lg text-black font-bold md:block"><i class="fa-solid mr-1 fa-envelope"></i></i><a href="#footer">Contact</a></button>
+      <span class="md:hidden"><i class="text-white burger fa-2xl fa-solid fa-burger"></i></span>
+  </nav>
+  
+    <div class="flex herobg  bg-cover bg-center flex-col justify-center items-start px-10 pt-44 pb-20 md:pt-52 b-10 md:px-52">
+        <h1 class="text-white font-roboto mb-2 text-4xl md:w-3/4 md:text-8xl md:mb-5">Together, we design medical devices that shape our future</h1>
+        <p class=" mb-5 text-gray-300 text-sm md:font-ubuntu md:text-xl md:w-3/4 md:font-bold ">MEDFINS specializes in Strategy, Design, and Engineering. We harness our expertise to transform your innovative ideas into reality.</p>
         <div class="flex w-3/4 items-center">
-            <button class="border-none glow-on-hover mr-6 px-5 py-3 rounded bg-white text-lg text-black font-bold"><a href="about.html">Discover MEDIFINS</a><i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
+            <button class="border-none glow-on-hover rounded bg-white text-black font-bold p-2 text-sm md:mr-6 md:px-5 md:py-3 md:text-lg "><a href="about.html">Discover MEDIFINS</a><i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
         </div>
     </div>
-    <div class="flex flex-col w-full items-center justify-center p-32">
-        <h1 class="type text-2xl font-roboto text-white">We push innovation boundaries by conneting the dots between humans and technology.</h1>
-        <p class="text-2xl my-10 font-ubuntu text-gray-300">Whether you are a start-up that wants to turn a revolutionary idea into reality or an established organization looking for support, we support you at any stage to create high-performance medical devices that meet the real needs of your market and users.</p>
-        <div class="flex w-full justify-center items-center">
-            <button class="border-none glow-on-hover mr-6 px-5 py-3 rounded bg-white text-lg text-black font-semibold"><a href="error.html">Our approach</a><i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
-            <a href="about.html" class="text-xl text-animation font-ubuntu font-bold text-gray-300">About Us<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
-        </div>
+    
+    <div class="flex flex-col w-full items-center justify-center p-5 md:p-32">
+      <h1 class="font-roboto text-white text-l text-center md:text-2xl md:text-left type">We push innovation boundaries by conneting the dots between humans and technology.</h1>
+      <p class="font-ubuntu text-gray-300 my-5 text-l text-center md:my-10 md:text-2xl md:text-left">Whether you are a start-up that wants to turn a revolutionary idea into reality or an established organization looking for support, we support you at any stage to create high-performance medical devices that meet the real needs of your market and users.</p>
+      <div class="flex my-5 w-full justify-center items-center md:my-0">
+          <button class="border-none glow-on-hover rounded bg-white text-black font-semibold p-2 md:mr-6 md:px-5 md:py-3 md:text-lg "><a href="error.html">Our approach</a><i class="fa-solid ml-2 fa-arrow-right-long"></i></button>
+          <a href="about.html" class="text-sm text-animation font-ubuntu font-bold text-gray-300 md:text-xl ">About Us<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
+      </div>
     </div>
-    <div class="marquee w-11/12 items-center rounded mx-auto flex overflow-hidden gap-1 relative mb-32">
-        <div class="marquee-content scroll flex-shrink-0 flex justify-around min-w-full gap-x-20">
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Innovation Strategy</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Human Factors & User Experience</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">User Interface Design</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Industrial Design</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Mechanical Engineering</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Electronic Engineering</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Software Development</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Embedded Software Development</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Manufacturing Support & Sourcing</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Quality Assurance & Regulatory Compliance</h1>
-        </div>
-        <div class="marquee-content scroll ml-14 flex-shrink-0 flex justify-around min-w-full gap-x-20">
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Innovation Strategy</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Human Factors & User Experience</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">User Interface Design</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Industrial Design</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Mechanical Engineering</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Electronic Engineering</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Software Development</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Embedded Software Development</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Manufacturing Support & Sourcing</h1>
-            <h1 class="text-4xl opacity-35 text-gray-300 font-roboto font-bold">Quality Assurance & Regulatory Compliance</h1>
-        </div>
-        <div class="absolute w-full bg-gradient-to-l from-black via-transparent to-black h-full"></div>
-    </div>
-    <div class="flex bg-stone-300 rounded-t-[3rem] flex-col justify-center items-center p-32">
-        <h1 class="text-6xl text-gray-900 font-light">All-in-One Medical Device & Software</h1>
-        <h1 class="text-6xl text-gray-900 font-light mb-5">Development Expertise</h1>
-        <div class="flex p-5 justify-around items-center">
-           
-            <div class="w-1/3 p-3 h-96">
-              <div class="bg-white p-1 py-7 w-full rounded-lg shadow-lg">
-                <img src="./src/assets/logo/medfins-icon-strategy.png" alt="Image 1" class="w-1/3 p-2">
-                <div class="px-6 pb-5">
-                  <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Innovation Strategy</h1>
-                  <p class="text-gray-900 mb-5">User Research, Competitive Analysis, Value Proposition Definition & Cost Estimates</p>
-                  <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/inovationStrategy.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-            </div>
-          
-            <div class="w-1/3 mt-6 p-3 h-96">
-              <div class="bg-white p-1 py-7 w-full rounded-lg shadow-lg">
-                <img src="./src/assets/logo/medfins-icon-design.png" alt="Image 2" class="w-1/3 p-2">
-                <div class="px-6 pb-5">
-                  <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Human Factors & Design</h1>
-                  <p class="text-gray-900 mb-5">User Experience, User Interface, Brand Identity & Industrial Design  & Regulatory Compliance</p>
-                  <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/humanFactors&UserExperience.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
-                </div>
-              </div>
-            </div>
 
-            <div class="w-1/3 mt-12 p-3 h-96">
-                <div class="bg-white p-1 py-7 w-full rounded-lg shadow-lg">
-                  <img src="./src/assets/logo/medfins-icon-engineering.png" alt="Image 2" class="w-1/3 p-2">
-                  <div class="px-6 pb-5">
-                    <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Engineering & Software Development</h1>
-                    <p class="text-gray-900 mb-5">Electronics & Mechanical Engineering, Firmware & Software Development</p>
-                    <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/mechanicalEngineering.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
-                  </div>
-                </div>
-            </div>
+    <div class="marquee w-11/12 items-center rounded mx-auto flex overflow-hidden gap-1 relative mb-10 md:mb-32">
+      <div class="marquee-content scroll flex-shrink-0 flex justify-around min-w-full text-xl gap-x-10 md:gap-x-20 md:text-4xl">
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Innovation Strategy</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Human Factors & User Experience</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">User Interface Design</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Industrial Design</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Mechanical Engineering</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Electronic Engineering</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Software Development</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Embedded Software Development</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Manufacturing Support & Sourcing</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Quality Assurance & Regulatory Compliance</h1>
+      </div>
+      <div class="marquee-content scroll ml-14 flex-shrink-0 flex justify-around min-w-full text-xl gap-x-10 md:gap-x-20 md:text-4xl">
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Innovation Strategy</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Human Factors & User Experience</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">User Interface Design</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Industrial Design</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Mechanical Engineering</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Electronic Engineering</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Software Development</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Embedded Software Development</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Manufacturing Support & Sourcing</h1>
+          <h1 class="opacity-35 text-gray-300 font-roboto font-bold">Quality Assurance & Regulatory Compliance</h1>
+      </div>
+      <div class="absolute w-full bg-gradient-to-l from-black via-transparent to-black h-full"></div>
+  </div>
 
-            <div class="w-1/3 mt-20 p-3 h-96">
-                <div class="bg-white p-1 py-7 w-full rounded-lg shadow-lg">
-                  <img src="./src/assets/logo/medfins-icon-quality.png" alt="Image 2" class="w-1/3 p-2">
-                  <div class="px-6 pb-5">
-                    <h1 class="text-2xl text-gray-900 mb-2 font-semibold">Quality Assurance & Regulatory Compliances</h1>
-                    <p class="text-gray-900 mb-5">Quality Management, Risk Management, Documentation & Regulatory Compliance</p>
-                    <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
-                  </div>
-                </div>
+  <div class="flex bg-stone-300 rounded-t-[3rem] flex-col justify-center items-center p-10 md:p-32">
+    <h1 class="text-gray-900 font-light text-center text-4xl md:text-left md:text-6xl ">All-in-One Medical Device & Software</h1>
+    <h1 class="text-2xl text-gray-900 text-center font-light md:mb-5 md:text-left md:text-6xl">Development Expertise</h1>
+    <div class="flex p-5 justify-around gap-y-5 items-center flex-col md:gap-y-0 md:flex-row">
+       
+        <div class="p-3 h-96 w-72 md:w-1/3">
+          <div class="bg-white h-full flex items-start justify-center flex-col p-1 w-full rounded-lg shadow-lg md:py-7">
+            <img src="./src/assets/logo/medfins-icon-strategy.png" alt="Image 1" class="w-1/3 p-2">
+            <div class="px-6 pb-5">
+              <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Innovation Strategy</h1>
+              <p class="text-gray-900 mb-5">User Research, Competitive Analysis, Value Proposition Definition & Cost Estimates</p>
+              <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/inovationStrategy.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
             </div>
-          </div>    
+          </div>
         </div>
-        <div class="marquee w-full items-center bg-stone-300 pb-32 rounded flex overflow-hidden gap-1 relative">
-            <div class="marquee-content  scroll-image flex-shrink-0 flex justify-around min-w-full gap-x-20">
-               <img src="./src/assets/images/Innovation Statergy/lightbulb-3449671.jpg" alt="" class="h-[30rem] rounded-3xl">
-               <img src="./src/assets/images/Innovation Statergy/technology-4256272.jpg" alt="" class="h-[30rem] rounded-3xl">
-               <img src="./src/assets/images/Mechanical engineering/technical-drawing-3324368.jpg" alt="" class="h-[30rem] rounded-3xl">
-               <img src="./src/assets/images/Software Development/programming-1873854.png" alt="" class="h-[30rem] rounded-3xl">
-               <img src="./src/assets/images/Innovation Statergy/entrepreneur-4784289.jpg" alt="" class="h-[30rem] rounded-3xl">
-               <img src="./src/assets/images/Regulatory Affairs/financial-managers-work.jpg" alt="" class="h-[30rem] rounded-3xl">
+      
+        <div class="p-3 h-96 w-72 md:w-1/3">
+          <div class="bg-white h-full flex items-start justify-center flex-col p-1 w-full rounded-lg shadow-lg md:py-7">
+            <img src="./src/assets/logo/medfins-icon-design.png" alt="Image 2" class="w-1/3 p-2">
+            <div class="px-6 pb-5">
+              <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Human Factors & Design</h1>
+              <p class="text-gray-900 mb-5">User Experience, User Interface, Brand Identity & Industrial Design  & Regulatory Compliance</p>
+              <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/humanFactors&UserExperience.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
             </div>
-            <div class="marquee-content ml-20 scroll-image flex-shrink-0 flex justify-around min-w-full gap-x-20">
-                <img src="./src/assets/images/Innovation Statergy/lightbulb-3449671.jpg" alt="" class="h-[30rem] rounded-3xl">
-                <img src="./src/assets/images/Innovation Statergy/technology-4256272.jpg" alt="" class="h-[30rem] rounded-3xl">
-                <img src="./src/assets/images/Mechanical engineering/technical-drawing-3324368.jpg" alt="" class="h-[30rem] rounded-3xl">
-                <img src="./src/assets/images/Software Development/programming-1873854.png" alt="" class="h-[30rem] rounded-3xl">
-                <img src="./src/assets/images/Innovation Statergy/entrepreneur-4784289.jpg" alt="" class="h-[30rem] rounded-3xl">
-                <img src="./src/assets/images/Regulatory Affairs/financial-managers-work.jpg" alt="" class="h-[30rem] rounded-3xl">
-            </div>
-            <div class="faded-div absolute w-full left-0 h-full"></div>
+          </div>
         </div>
-        <footer class="px-28 pb-20 bg-black flex justify-around items-center">
-            <div class="flex w-1/3 flex-shrink-0 flex-col">
-              <img src="./src/assets/logo/Medfins LOGO white.png" class="w-36 mb-5" alt="logo">
-              <p class="text-xl text-gray-200">We encourage positive, fun and authentic collaboration, while placing a high value on people.</p>
-              <div class="flex mt-10 justify-around w-1/2 items-center">
-                <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-twitter"></i></a>
+
+        <div class="p-3 h-96 w-72 md:w-1/3">
+            <div class="bg-white h-full flex items-start justify-center flex-col p-1 w-full rounded-lg shadow-lg md:py-7">
+              <img src="./src/assets/logo/medfins-icon-engineering.png" alt="Image 2" class="w-1/3 p-2">
+              <div class="px-6 pb-5">
+                <h1 class="text-2xl w-3/4 text-gray-900 mb-2 font-semibold">Engineering & Software Development</h1>
+                <p class="text-gray-900 mb-5">Electronics & Mechanical Engineering, Firmware & Software Development</p>
+                <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/mechanicalEngineering.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
               </div>
             </div>
-            <div class="flex w-1/3 pt-10 flex-col justify-start items-start">
-              <h1 class="text-2xl text-white h-full mb-5 underline font-roboto">Expertise</h1>
-              <div class="left text-white flex flex-col justify-around items-start font-light text-l">
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/inovationStrategy.html">Innovation Strategy</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/humanFactors&UserExperience.html">Human Factors & User Experience</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/userInterfaceDesign.html">User Interface Design</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/industrialDesign.html">Industrial Design</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/mechanicalEngineering.html">Mechanical Engineering</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/electronicEngineering.html">Electronic Engineering</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/embeddedSoftwareDevelopment.html">Embedded Software Development</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/softwareDevelopment.html">Software Development</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/manufacturingSupport&Sourcin.html">Manufacturing Support and Sourcing</a>
-                <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html">Quality Assurance & Regulatory Compliance</a>
+        </div>
+
+        <div class="p-3 h-96 w-72 md:w-1/3">
+            <div class="bg-white h-full flex items-start justify-center flex-col p-1 w-full rounded-lg shadow-lg md:py-7">
+              <img src="./src/assets/logo/medfins-icon-quality.png" alt="Image 2" class="w-1/3 p-2">
+              <div class="px-6 pb-5">
+                <h1 class="text-2xl text-gray-900 mb-2 font-semibold">Quality Assurance & Regulatory Compliances</h1>
+                <p class="text-gray-900 mb-5">Quality Management, Risk Management, Documentation & Regulatory Compliance</p>
+                <a class="underline text-animation text-orange-500 font-roboto text-xl" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html">Learn More<i class="fa-solid fa-sm ml-2 fa-arrow-right-long"></i></a>
               </div>
             </div>
-            <div class="flex w-1/3 pt-14 flex-col text-white">
-              <h1 class="text-3xl underline text-white h-full mb-5 font-roboto">Contact Us</h1>
-              <p class="text-xl mb-5 font-light w-2/3">Medfins International LLP. 29, 142 Sector Noida , Uttar Pradesh - 201301 India</p>
-              <a class="mb-5" href="tel:+917042028042"><i class="fa-solid mr-2 fa-sm fa-phone"></i>7042028042</a>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.501236892!2d77.23701428938786!3d28.52210235097899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1696953211026!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </footer>
-        <div class="w-full bg-gray-950 flex justify-center p-5 items-center h-14">
-          <h1 class="text-gray-300 text-l font-light">© 2023 MEDFINS – All Rights Reserved.</h1>
         </div>
+      </div>    
+    </div>
+
+    <div class="w-full items-center bg-stone-300 rounded pb-10 flex overflow-hidden gap-1 relative md:pb-32 ">
+      <div class="scroll-image-mobile flex-shrink-0 flex justify-around min-w-full gap-x-20 md:scroll-image">
+         <img src="./src/assets/images/Innovation Statergy/lightbulb-3449671.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+         <img src="./src/assets/images/Innovation Statergy/technology-4256272.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+         <img src="./src/assets/images/Mechanical engineering/technical-drawing-3324368.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+         <img src="./src/assets/images/Software Development/programming-1873854.png" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+         <img src="./src/assets/images/Innovation Statergy/entrepreneur-4784289.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+         <img src="./src/assets/images/Regulatory Affairs/financial-managers-work.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+      </div>
+      <div class="scroll-image-mobile ml-20 flex-shrink-0 flex justify-around min-w-full gap-x-20 md:scroll-image">
+          <img src="./src/assets/images/Innovation Statergy/lightbulb-3449671.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+          <img src="./src/assets/images/Innovation Statergy/technology-4256272.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+          <img src="./src/assets/images/Mechanical engineering/technical-drawing-3324368.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+          <img src="./src/assets/images/Software Development/programming-1873854.png" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+          <img src="./src/assets/images/Innovation Statergy/entrepreneur-4784289.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+          <img src="./src/assets/images/Regulatory Affairs/financial-managers-work.jpg" alt="" class="rounded-xl h-[20rem] md:h-[30rem] md:rounded-3xl">
+      </div>
+      <div class="md:faded-div absolute w-full left-0 h-full"></div>
+  </div>
+  <footer id="footer" class="pb-10 bg-black flex flex-col justify-around items-center md:flex-row md:px-28 md:pb-20">
+    <div class="flex px-5 pt-10 flex-shrink-0 flex-col md:w-1/3 md:px-0 md:pt-0">
+      <img src="./src/assets/logo/Medfins LOGO white.png" class="w-36 mb-5" alt="logo">
+      <p class="text-xl text-gray-200">We encourage positive, fun and authentic collaboration, while placing a high value on people.</p>
+      <div class="flex mt-10 justify-around w-1/2 items-center">
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="flex px-5 pt-10 flex-col justify-start items-start md:w-1/3">
+      <h1 class="text-2xl text-white h-full mb-5 underline font-roboto">Expertise</h1>
+      <div class="left text-white flex flex-col justify-around items-start font-light text-l">
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/inovationStrategy.html">Innovation Strategy</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/humanFactors&UserExperience.html">Human Factors & User Experience</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/userInterfaceDesign.html">User Interface Design</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/industrialDesign.html">Industrial Design</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/mechanicalEngineering.html">Mechanical Engineering</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/electronicEngineering.html">Electronic Engineering</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/embeddedSoftwareDevelopment.html">Embedded Software Development</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/softwareDevelopment.html">Software Development</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/manufacturingSupport&Sourcin.html">Manufacturing Support and Sourcing</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="./src/expertise/qualityAssurance&RegulatoryCompliance.html">Quality Assurance & Regulatory Compliance</a>
+      </div>
+    </div>
+    <div class="flex px-5 pt-14 flex-col text-white md:w-1/3">
+      <h1 class="text-3xl underline text-white h-full mb-5 font-roboto">Contact Us</h1>
+      <p class="text-xl mb-5 font-light w-2/3">Medfins International LLP. 29, 142 Sector Noida , Uttar Pradesh - 201301 India</p>
+      <a class="mb-2" href="tel:+917042028042"><i class="fa-solid mr-2 fa-sm fa-phone"></i>(+91) 7042028042</a>
+      <a class="mb-5" href="mailto:info@medfinsinternational.com"><i class="fa-solid fa-sm mr-2 fa-envelope"></i>info@medfinsinternational.com</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.501236892!2d77.23701428938786!3d28.52210235097899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1696953211026!5m2!1sen!2sin" class="w-[300px] md:w-[400px]" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+<div class="w-full bg-gray-950 flex justify-center p-5 items-center h-14">
+  <h1 class="text-gray-300 text-l font-light">© 2023 MEDFINS – All Rights Reserved.</h1>
+</div>
 <script src="src/app.js"></script>
 </body>
 </html> 

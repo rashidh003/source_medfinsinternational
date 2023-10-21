@@ -7,45 +7,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Human Factor & User Experience | MEDFINS</title>
 </head>
-<body class="bg-black container">
-    <nav class="flex fixed z-20 justify-between items-center w-full bg-black px-10 py-7">
-        <a href="../../"><img src="../assets/logo/Medfins LOGO white.png" class="w-36 mr-10" alt="logo"></a>
-              <div class="links flex items-center justify-around relative">
-                <a href="../../" class="p-2 text-gray-300 font-semibold text-l">Home</a>
-                  <div class="drop-menu mx-5">
-                    <a href="#" class="p-2 text-gray-300 font-semibold expertise-link text-l">Expertise<i class="ml-1 fa-solid fa-arrow-down"></i></a>
-                    <div class="absolute dropdown flex flex-col w-[30rem] top-10 rounded-xl bg-black p-10 justify-center items-start">
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
-                    </div>
-                  </div>
-                <a href="../../about.html" class="p-2 text-gray-300 font-semibold text-l">About</a>
-              </div>
-          <button class="border-none font-roboto smooth-hover px-5 py-2 rounded hover:mb-2 bg-white text-lg text-black font-bold"><i class="fa-solid mr-1 fa-envelope"></i></i><a href="../../contact.html">Contact</a></button>
-      </nav>
-      <div class="flex mb-10 flex-col items-start px-44 pt-52 justify-center">
-        <h1 class="text-white w-4/5 mt-5 mb-10 font-light text-6xl">Human Factor & User Experience</h1>
+<body class="bg-black container" onload="hidePreloader()">
+    <div id="preloader" class="bg-black z-30 fixed h-screen w-full flex justify-center items-center">
+        <img class="w-1/2 md:w-[15%]" src="../assets/logo/Medfins LOGO white.png" alt="">
+    </div>
+    <nav class="bg-black flex p-5 justify-between overflow-y-visible z-50 fixed w-full items-center md:px-10 md:py-7 ">
+        <img class="w-28 md:w-36" src="../assets/logo/Medfins LOGO white.png" alt="img">
+        <div class="flex nav-part pt-20 p-10 h-screen z-50 fixed w-3/4 top-0 bg-zinc-900 text-white flex-col items-start md:hidden">
+            <span class="x-button text-zinc-400 absolute top-0 left-0 p-5"><i class="fa-solid fa-xl fa-xmark"></i></span>
+            <a class="mb-5" href="../../">Home</a>
+            <div class="flex flex-col">
+                <a class="expertise mb-5" href="#">Expertise <i class="ml-1 fas fa-caret-down"></i></a>
+                <div class="ml-2 drop-down hidden mb-5 gap-2 text-white flex-col justify-center items-start">
+                    <a class="hover:bg-zinc-500" href="inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
+                    <a class="hover:bg-zinc-500" href="humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
+                    <a class="hover:bg-zinc-500" href="userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
+                    <a class="hover:bg-zinc-500" href="industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
+                    <a class="hover:bg-zinc-500" href="mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
+                    <a class="hover:bg-zinc-500" href="electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
+                    <a class="hover:bg-zinc-500" href="embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
+                    <a class="hover:bg-zinc-500" href="softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
+                    <a class="hover:bg-zinc-500" href="manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
+                    <a class="hover:bg-zinc-500" href="qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
+                </div>
+            </div>
+            <a href="../../about.html">About</a>
+        </div>
+        <div class="links hidden items-center justify-around relative md:flex">
+            <a href="./" class="p-2 text-gray-300 font-semibold text-l">Home</a>
+                <div class="drop-menu mx-5">
+                <a href="#" class="p-2 text-gray-300 font-semibold expertise-link text-l">Expertise</i></a>
+                <div class="absolute dropdown flex flex-col z-50 text-white w-[30rem] top-10 border-x-2 border-white rounded-xl bg-black p-10 justify-center items-start">
+                    <a class="mb-[1rem] tracking-wide" href="inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
+                    <a class="mb-[1rem] tracking-wide" href="humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
+                    <a class="mb-[1rem] tracking-wide" href="userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
+                    <a class="mb-[1rem] tracking-wide" href="industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
+                    <a class="mb-[1rem] tracking-wide" href="mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
+                    <a class="mb-[1rem] tracking-wide" href="electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
+                    <a class="mb-[1rem] tracking-wide" href="embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
+                    <a class="mb-[1rem] tracking-wide" href="softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
+                    <a class="mb-[1rem] tracking-wide" href="manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
+                    <a class="mb-[1rem] tracking-wide" href="qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
+                </div>
+                </div>
+            <a href="../../about.html" class="p-2 text-gray-300 font-semibold text-l">About</a>
+            </div>
+            <button class="hidden border-none z-20 font-roboto smooth-hover px-5 py-2 rounded hover:mb-2 bg-white text-lg text-black font-bold md:block"><i class="fa-solid mr-1 fa-envelope"></i></i><a href="#footer">Contact</a></button>
+        <span class="md:hidden"><i class="text-white burger fa-2xl fa-solid fa-burger"></i></span>
+    </nav>
+    <div class="flex mb-10 flex-col items-start px-5 pt-44 md:pt-52 justify-center md:px-44 ">
+        <h1 class="text-white mt-5 mb-5 font-light text-4xl md:text-6xl md:mb-10  md:w-4/5">Human Factor & User Experience</h1>
         <div class="flex items-center">
-            <a class="underline text-xl font-roboto text-gray-500 tracking-wider underline-offset-4" href="#">Expertise<i class="ml-2 fa-solid fa-sm fa-arrow-right"></i></a><span class="text-l ml-2 tracking-wider text-white">Human Factor & User Experience</span>
+            <a class="underline text-l font-roboto text-gray-500 tracking-wider underline-offset-4 md:text-xl " href="#">Expertise<i class="ml-2 fa-solid fa-sm fa-arrow-right"></i></a><span class="text-sm ml-2 tracking-wider text-white md:text-l">Human Factor & User Experience</span>
         </div>
-      </div>
-      <div class="w-full h-[30rem] bg-cover bg-center mb-10 bg-humanhero"></div>
-      <div class="flex justify-around items-center px-20 py-10">
-        <div class="flex w-1/2 flex-col text-white">
-            <h1 class="mb-10 font-light text-5xl">We use a systematic approach to capture the human factor complexity</h1>
-            <p class="text-xl mb-5 ">The main trap is to presume what the users and the market want. To leave doors open and explore all possibilities in the design of a new product, we identify and exploit all gaps and opportunities at every project stage:</p>
-            <p class="text-xl">This transversal process aims to fundamentally improve physical and digital product quality, from safety to emotions, from the definition requirements to the validation.</p>
+    </div>
+    <div class="w-full h-[15rem] bg-cover bg-center mb-10 bg-humanhero md:h-[30rem]"></div>
+    <div class="flex justify-around items-center flex-col px-5 py-10 md:px-20 md:py-10 md:flex-row">
+        <div class="flex flex-col text-white md:w-1/2">
+            <h1 class="mb-5 font-light text-3xl md:text-5xl md:mb-10">We use a systematic approach to capture the human factor complexity</h1>
+            <p class="text-l md:text-xl mb-5 ">The main trap is to presume what the users and the market want. To leave doors open and explore all possibilities in the design of a new product, we identify and exploit all gaps and opportunities at every project stage:</p>
+            <p class="text-l md:text-xl">This transversal process aims to fundamentally improve physical and digital product quality, from safety to emotions, from the definition requirements to the validation.</p>
         </div>
-        <div class="flex flex-col p-20 justify-center items-start">
-            <p class="text-xl mb-6 text-white font-roboto">The benefits of a user-centered approach:</p>
+        <div class="flex flex-col justify-center items-start mt-10 md:p-20 md:mt-0">
+            <p class="text-2xl mb-6 text-white font-roboto">The benefits of a user-centered approach:</p>
             <h1 class="text-teal-600 mb-2 text-2xl"><i class="fa-solid mr-2 fa-check"></i>Better time and cost management</h1>
             <h1 class="text-teal-600 mb-2 text-2xl"><i class="fa-solid mr-2 fa-check"></i>Reduced risk of error</h1>
             <h1 class="text-teal-600 mb-2 text-2xl"><i class="fa-solid mr-2 fa-check"></i>Better user onboarding</h1>
@@ -53,8 +77,11 @@
             <h1 class="text-teal-600 mb-2 text-2xl"><i class="fa-solid mr-2 fa-check"></i>Increase in sales</h1>
             <h1 class="text-teal-600 mb-2 text-2xl"><i class="fa-solid mr-2 fa-check"></i>Higher utilization rate</h1>
         </div>
-      </div>
-      <div class="flex flex-col text-white justify-center px-52 py-10 mb-10 items-start">
+    </div>
+    
+      
+      
+    <div class="flex flex-col text-white justify-center px-52 py-10 mb-10 items-start">
         <h1 class="mb-10 font-light text-4xl">What we do</h1>
         <div class="flex w-full items-start flex-wrap">
             <div class="flex mr-2 mt-3 border-2 items-center overflow-hidden border-white rounded-lg h-10 w-auto">
@@ -212,7 +239,7 @@
     </footer>
     <div class="w-full bg-gray-950 flex justify-center p-5 items-center h-14">
         <h1 class="text-gray-300 text-l font-light">© 2023 MEDFINS – All Rights Reserved.</h1>
-      </div>
+    </div>
 <script src="../app.js"></script>
 </body>
 </html>

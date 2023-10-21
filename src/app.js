@@ -36,6 +36,24 @@ document.addEventListener("DOMContentLoaded",()=>{
             dropdown.style.visibility = "hidden"; 
         }, 300);
     });
+    const dropDown = document.querySelector(".drop-down"); 
+    const expertise = document.querySelector(".expertise");
+    expertise.addEventListener("click", () => {
+        dropDown.classList.toggle("flex");
+    });
+
+    const burger = document.querySelector(".burger");
+    const navPart = document.querySelector(".nav-part");
+    const xButton = document.querySelector(".x-button")
+
+    burger.addEventListener("click", ()=>{
+        navPart.classList.toggle("slideIn");
+    })
+
+    xButton.addEventListener("click", ()=>{
+        navPart.classList.toggle("slideIn");
+    })
+    
 
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
@@ -48,7 +66,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     function typeWriting() {
         const element = document.querySelector('.type');
-        if (isInViewport(element)) {
+        if (isInViewport(element) && window.screen.width >= 767) {
             element.classList.add('typewriter');
             window.removeEventListener('scroll', typeWriting);
         }
