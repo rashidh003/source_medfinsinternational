@@ -1,18 +1,5 @@
-const banner = `
-                                 █████       ███      █████ █████         █████       █████     ████████ 
-                            ░░███       ░░░      ░░███ ░░███        ███░░░███   ███░░░███  ███░░░░███
- ████████   ██████    █████  ░███████   ████   ███████  ░███████   ███   ░░███ ███   ░░███░░░    ░███
-░░███░░███ ░░░░░███  ███░░   ░███░░███ ░░███  ███░░███  ░███░░███ ░███    ░███░███    ░███   ██████░ 
- ░███ ░░░   ███████ ░░█████  ░███ ░███  ░███ ░███ ░███  ░███ ░███ ░███    ░███░███    ░███  ░░░░░░███
- ░███      ███░░███  ░░░░███ ░███ ░███  ░███ ░███ ░███  ░███ ░███ ░░███   ███ ░░███   ███  ███   ░███
- █████    ░░████████ ██████  ████ █████ █████░░████████ ████ █████ ░░░█████░   ░░░█████░  ░░████████ 
-░░░░░      ░░░░░░░░ ░░░░░░  ░░░░ ░░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░    ░░░░░░      ░░░░░░    ░░░░░░░░  
-                                                                                                     
-                                                                                                     
-                                                                                                     
-`;
+
 console.log("Developed by");
-console.log(banner);
 console.log("https://www.linkedin.com/in/mohammed-rashidh-999879253/");
 function hidePreloader() {
     const preloader = document.getElementById("preloader");
@@ -72,7 +59,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
     }
 
-    if (window.location.pathname === '/index.html') {
+    if (window.location.pathname === '/') {
         window.addEventListener('scroll', typeWriting);
     }
 

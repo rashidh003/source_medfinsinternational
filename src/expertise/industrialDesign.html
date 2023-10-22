@@ -7,45 +7,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <title>Industrial Design | MEDFINS</title>
 </head>
-<body class="bg-black">
-    <nav class="flex fixed z-20 justify-between items-center w-full bg-black px-10 py-7">
-        <a href="../../"><img src="../assets/logo/Medfins LOGO white.png" class="w-36 mr-10" alt="logo"></a>
-              <div class="links flex items-center justify-around relative">
-                <a href="../../" class="p-2 text-gray-300 font-semibold text-l">Home</a>
-                  <div class="drop-menu mx-5">
-                    <a href="#" class="p-2 text-gray-300 font-semibold expertise-link text-l">Expertise</i></a>
-                    <div class="absolute dropdown flex flex-col w-[30rem] top-10 rounded-xl bg-black p-10 justify-center items-start">
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
-                      <a class="mb-[1rem] tracking-wide hover:text-white" href="qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
-                    </div>
-                  </div>
-                <a href="../../about.html" class="p-2 text-gray-300 font-semibold text-l">About</a>
-              </div>
-          <button class="border-none font-roboto smooth-hover px-5 py-2 rounded hover:mb-2 bg-white text-lg text-black font-bold"><i class="fa-solid mr-1 fa-envelope"></i></i><a href="../../contact.html">Contact</a></button>
-      </nav>
-      <div class="flex mb-10 flex-col items-start px-44 pt-52 justify-center">
-        <h1 class="text-white w-4/5 mt-5 mb-10 font-light text-6xl">Industrial Design</h1>
-        <div class="flex items-center">
-            <a class="underline text-xl font-roboto text-gray-500 tracking-wider underline-offset-4" href="#">Expertise<i class="ml-2 fa-solid fa-sm fa-arrow-right"></i></a><span class="text-l ml-2 tracking-wider text-white">Industrial Design</span>
+<body class="bg-black container" onload="hidePreloader()">
+    <div id="preloader" class="bg-black z-50 fixed h-screen w-full flex justify-center items-center">
+        <img class="w-1/2 md:w-[15%]" src="../assets/logo/Medfins LOGO white.png" alt="">
+    </div>
+    <nav class="bg-black flex p-5 justify-between overflow-y-visible z-30 fixed w-full items-center md:px-10 md:py-7 ">
+        <img class="w-28 md:w-36" src="../assets/logo/Medfins LOGO white.png" alt="img">
+        <div class="flex nav-part pt-20 p-10 h-screen z-50 fixed w-3/4 top-0 bg-zinc-900 text-white flex-col items-start md:hidden">
+            <span class="x-button text-zinc-400 absolute top-0 left-0 p-5"><i class="fa-solid fa-xl fa-xmark"></i></span>
+            <a class="mb-5" href="../../">Home</a>
+            <div class="flex flex-col">
+                <a class="expertise mb-5" href="#">Expertise <i class="ml-1 fas fa-caret-down"></i></a>
+                <div class="ml-2 drop-down hidden mb-5 gap-2 text-white flex-col justify-center items-start">
+                    <a class="hover:bg-zinc-500" href="inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
+                    <a class="hover:bg-zinc-500" href="humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
+                    <a class="hover:bg-zinc-500" href="userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
+                    <a class="hover:bg-zinc-500" href="industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
+                    <a class="hover:bg-zinc-500" href="mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
+                    <a class="hover:bg-zinc-500" href="electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
+                    <a class="hover:bg-zinc-500" href="embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
+                    <a class="hover:bg-zinc-500" href="softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
+                    <a class="hover:bg-zinc-500" href="manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
+                    <a class="hover:bg-zinc-500" href="qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
+                </div>
+            </div>
+            <a href="../../about.html">About</a>
         </div>
-      </div>
-      <div class="w-full h-[37rem] bg-cover bg-center mb-10 bg-indushero"></div>
-      <div class="flex justify-around items-center px-20 pt-10">
-        <h1 class="mb-10 text-white w-1/3 font-light text-5xl">We find the balance between technology, functionality, and aesthetics</h1>
-        <div class="flex flex-col w-1/2 p-20 justify-center items-start">
-            <p class="text-xl mb-6 text-white font-roboto">At MEDFINS, our industrial designers ensure that your product is elegant, manufacturable, ergonomic, user-friendly, and safe. They are creative, versatile, trend-savvy, and process-oriented. With first-hand experience with medical professionals, they specialize in designing medical instruments and devices.</p>
-          </div>
-      </div>
-      <div class="flex flex-col text-white justify-center px-52 pb-20 items-start">
-        <h1 class="mb-10 font-light text-4xl">What we do</h1>
+        <div class="links hidden items-center justify-around relative md:flex">
+            <a href="./" class="p-2 text-gray-300 font-semibold text-l">Home</a>
+                <div class="drop-menu mx-5">
+                <a href="#" class="p-2 text-gray-300 font-semibold expertise-link text-l">Expertise</i></a>
+                <div class="absolute dropdown flex flex-col z-50 text-white w-[30rem] top-10 border-x-2 border-white rounded-xl bg-black p-10 justify-center items-start">
+                    <a class="mb-[1rem] tracking-wide" href="inovationStrategy.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Innovation Strategy</a>
+                    <a class="mb-[1rem] tracking-wide" href="humanFactors&UserExperience.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Human Factors & User Experience</a>
+                    <a class="mb-[1rem] tracking-wide" href="userInterfaceDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>User Interface Design</a>
+                    <a class="mb-[1rem] tracking-wide" href="industrialDesign.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Industrial Design</a>
+                    <a class="mb-[1rem] tracking-wide" href="mechanicalEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Mechanical Engineering</a>
+                    <a class="mb-[1rem] tracking-wide" href="electronicEngineering.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Electronic Engineering</a>
+                    <a class="mb-[1rem] tracking-wide" href="embeddedSoftwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Embedded Software Development</a>
+                    <a class="mb-[1rem] tracking-wide" href="softwareDevelopment.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Software Development</a>
+                    <a class="mb-[1rem] tracking-wide" href="manufacturingSupport&Sourcin.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Manufacturing Support and Sourcing</a>
+                    <a class="mb-[1rem] tracking-wide" href="qualityAssurance&RegulatoryCompliance.html"><i class="fa-solid fa-sm mr-2 fa-arrow-right"></i>Quality Assurance & Regulatory Compliance</a>
+                </div>
+                </div>
+            <a href="../../about.html" class="p-2 text-gray-300 font-semibold text-l">About</a>
+            </div>
+            <button class="hidden border-none z-20 font-roboto smooth-hover px-5 py-2 rounded hover:mb-2 bg-white text-lg text-black font-bold md:block"><i class="fa-solid mr-2 fa-blog"></i><a href="#">Blog</a></button>
+        <span class="md:hidden"><i class="text-white burger fa-2xl fa-solid fa-burger"></i></span>
+    </nav>
+    <div class="flex mb-5 md:mb-10 flex-col items-start px-5 md:px-44 pt-44 md:pt-52 justify-center">
+        <h1 class="text-white md:w-4/5 mt-5 mb-10 font-light text-3xl md:text-6xl">Industrial Design</h1>
+        <div class="flex items-center">
+            <a class="underline text-l md:text-xl font-roboto text-gray-500 tracking-wider underline-offset-4" href="#">Expertise<i class="ml-2 fa-solid fa-sm fa-arrow-right"></i></a><span class="text-sm md:text-l ml-2 tracking-wider text-white">Industrial Design</span>
+        </div>
+    </div>
+    <div class="w-full h-[15rem] md:h-[37rem] bg-cover bg-center mb-10 bg-indushero"></div>
+    <div class="flex flex-col md:flex-row justify-around items-center px-5 md:px-20 pt-5 md:pt-10">
+        <h1 class="mb-5 md:mb-10 text-white md:w-1/3 font-light text-3xl md:text-5xl">We find the balance between technology, functionality, and aesthetics</h1>
+        <div class="flex flex-col md:w-1/2 md:p-20 justify-center items-start">
+            <p class="text-l md:text-xl mb-6 text-white font-roboto">At MEDFINS, our industrial designers ensure that your product is elegant, manufacturable, ergonomic, user-friendly, and safe. They are creative, versatile, trend-savvy, and process-oriented. With first-hand experience with medical professionals, they specialize in designing medical instruments and devices.</p>
+        </div>
+    </div>
+    <div class="flex flex-col text-white justify-center px-5 py-10 md:px-52 pb-10 md:pb-20 items-start">
+        <h1 class="mb-5 md:mb-10 font-light text-3xl md:text-4xl">What we do</h1>
         <div class="flex w-full items-start flex-wrap">
             <div class="flex mr-2 mt-3 border-2 items-center overflow-hidden border-white rounded-lg h-10 w-auto">
                 <div class="w-[0.5rem] h-full bg-white"></div>
@@ -96,115 +120,116 @@
                 <div class="text-white bg-black w-fit px-5">Engineering & Technical Validation</div>
             </div>
         </div>
-    </div>
-    <div class="flex flex-col justify-center items-start px-44 relative bg-indusdoc bg-cover bg-center pt-20 pb-80">
+      </div>
+      <div class="flex flex-col justify-center items-start px-5 md:px-44 relative bg-indusdoc bg-cover bg-center py-10 md:pt-20 md:pb-80">
         <div class="z-10">
-            <h1 class="text-white w-3/4 mb-5 font-light text-5xl">From early sketches to the manufacturing drawings, your product takes shape</h1>
-            <p class="text-white mb-5 text-xl w-3/5 ">Our industrial designers represent the solution more and more accurately as the project progresses. From conceptual sketches to prototypes and photorealistic renderings, they work hand-in-hand with you, following a well-practiced process.</p>
-            <div class="flex mt-10 justify-around items-start">
+            <h1 class="text-white md:w-3/4 mb-5 font-light text-3xl md:text-5xl">From early sketches to the manufacturing drawings, your product takes shape</h1>
+            <p class="text-white mb-5 text-l md:text-xl md:w-3/5 ">Our industrial designers represent the solution more and more accurately as the project progresses. From conceptual sketches to prototypes and photorealistic renderings, they work hand-in-hand with you, following a well-practiced process.</p>
+            <div class="flex flex-col md:flex-row mt-10 justify-around items-start">
                 <div class="flex flex-col p-10 bg-slate-500 rounded-xl">
                     <h1 class="text-black mb-6 font-light text-4xl">Usage scenario</h1>
                     <p class="text-black font-ubuntu text-l ">With the help of a user story map or a storyboard, we focus on usage from the product’s perspective. We think about the steps needed to complete a task, the requirements, and the functionality.</p>
                 </div>
-                <div class="flex ml-5 flex-col p-10 mt-10 bg-slate-500 rounded-xl">
+                <div class="flex md:ml-5 flex-col p-10 mt-5 md:mt-10 bg-slate-500 rounded-xl">
                     <h1 class="text-black mb-6 font-light text-4xl">Market Analysis</h1>
                     <p class="text-black font-ubuntu text-l ">We provide the client with a synthetic overview of the competitive landscape of its product. We establish or refine the target for ongoing development.</p>
                 </div>
             </div>
         </div>
         <div class="faded-div-uptodown absolute w-full top-0 left-0 h-full"></div>
-    </div>
-    <div class="flex flex-col px-32  py-20 justify-start items-start ">
-            <h1 class="text-white mb-10 font-light text-5xl">We define the concept to develop</h1>
-            <p class="text-white text-xl">Before moving on to technical development, we represent the concept to develop. We define requirements, product architecture, manufacturing strategy, and what we have to evaluate. We seek to reduce uncertainties and risks to a minimum.</p>
-            <div class="flex flex-wrap gap-2 pt-20 items-start">
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-[35rem] h-[25rem] ml-5 py-10 px-10">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">Functional architecture</h1>
-                    <p class="text-white font-ubuntu text-xl ">We create images of the elements we will integrate using 2D and 3D schematics. The diagrams help us to suggest placement options, as well as to visualize interactions and specific actions the product allows.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-[35rem] h-[25rem] ml-5 mt-5 py-10 px-10">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">Ergonomic analysis</h1>
-                    <p class="text-white font-ubuntu text-xl ">Thanks to realistic proportions mock-ups, we consider the scale, ergonomics, handling, and elements we will integrate.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-[35rem] h-[25rem] ml-5 py-10 px-10">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">Formative evaluation</h1>
-                    <p class="text-white font-ubuntu text-xl ">Testing the concept helps us identify the user interface strengths and weaknesses to suggest improvements. Our goal is to correct usability flaws.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-[35rem] h-[25rem] ml-5 py-10 mt-5 px-10">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">Cost estimate</h1>
-                    <p class="text-white font-ubuntu text-xl ">To remain aligned with the client’s expectations, we evaluate solution costs according to the manufacturing methods.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-[35rem] h-[25rem] ml-5 py-10 px-10">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">Physical Prototypes</h1>
-                    <p class="text-white font-ubuntu text-xl ">We also participate in the design of physical products by simulating their use through prototypes: cardboard mock-ups, 3D printing, interfaces manufactured by several 2D prints, etc.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-[35rem] h-[25rem] ml-5 py-10 mt-5 px-10">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">Photorealistic renderings</h1>
-                    <p class="text-white font-ubuntu text-xl ">We can create ultra-realistic product 3D renderings useful for marketing materials.</p>
-                </div>
-            </div>
-     </div>
-     <div class="flex justify-center bg-slate-400 items-center">
-        <div class="flex-flex-col pl-20 justfy-center items-start text-black">
-            <h1 class="text-black w-11/12 mb-10 font-light text-5xl">Harnessing the power of digital technology while remaining grounded to reality</h1>
-            <p class="text-black mb-5 text-xl w-3/5 ">Our industrial designers are agile and know how to use the communication and design tools at their disposal judiciously. Depending on the need, they go back and forth between 3D modeling and prototypes to guide the concept.</p>
-        </div>
-        <img class="w-1/2" src="../assets/images/Regulatory Affairs/financial-managers-work.jpg" alt="img">
-    </div>
-    <div class="flex flex-col relative px-44 py-20 justify-start items-start">
-            <h1 class="text-white w-11/12 mb-10 font-light text-5xl">We deal with complexity thanks to our multidisciplinary team strength</h1>
-            <p class="text-white text-xl w-3/5 ">Our industrial designers work in close collaboration with our engineers and developers right from the project beginning. This multidisciplinarity leads to decision-making efficiency and a more harmonious formal mechanical and electronic components integration.</p>
-            <div class="flex py-10 items-start">
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-zinc-500 w-[25rem] h-[30rem] ml-5 py-10 px-7">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">An industrial design mastery for the medical field</h1>
-                    <p class="text-white font-ubuntu text-xl ">Our designers are medical instruments and devices design experts with field experience with medical professionals.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-zinc-500 w-[25rem] h-[30rem] ml-5 mt-5 py-10 px-7">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">An iterative and collaborative approach</h1>
-                    <p class="text-white font-ubuntu text-xl ">Throughout the process, we make the product evolve. We like collaborating transparently with the client and conducting physical tests to align our design choices.</p>
-                </div>
-                <div class=" flex rounded-xl flex-col justify-center items-start bg-zinc-500 w-[25rem] h-[30rem] ml-5 py-10 mt-10 px-7">
-                    <h1 class="text-white mb-5 font-roboto text-5xl">A holistic approach to designing a relevant product</h1>
-                    <p class="text-white font-ubuntu text-xl ">Our work starts long before the product takes shape. To make it relevant, we pay particular attention to the market, the user, the context, the physical aspect, the risks, and the requirements.</p>
-                </div>
-            </div>
-     </div>
-     <footer class="px-28 pb-20 bg-black flex justify-around items-center">
-        <div class="flex w-1/3 flex-shrink-0 flex-col">
-          <img src="../assets/logo/Medfins LOGO white.png" class="w-36 mb-5" alt="logo">
-          <p class="text-xl text-gray-200">We encourage positive, fun and authentic collaboration, while placing a high value on people.</p>
-          <div class="flex mt-10 justify-around w-1/2 items-center">
-            <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-twitter"></i></a>
-          </div>
-        </div>
-        <div class="flex w-1/3 pt-10 flex-col justify-start items-start">
-          <h1 class="text-2xl text-white h-full mb-5 underline font-roboto">Expertise</h1>
-          <div class="left text-white flex flex-col justify-around items-start font-light text-l">
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="inovationStrategy.html">Innovation Strategy</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="humanFactors&UserExperience.html">Human Factors & User Experience</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="userInterfaceDesign.html">User Interface Design</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="industrialDesign.html">Industrial Design</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="mechanicalEngineering.html">Mechanical Engineering</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="electronicEngineering.html">Electronic Engineering</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="embeddedSoftwareDevelopment.html">Embedded Software Development</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="softwareDevelopment.html">Software Development</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="manufacturingSupport&Sourcin.html">Manufacturing Support and Sourcing</a>
-            <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="qualityAssurance&RegulatoryCompliance.html">Quality Assurance & Regulatory Compliance</a>
-          </div>
-        </div>
-        <div class="flex w-1/3 pt-14 flex-col text-white">
-          <h1 class="text-3xl underline text-white h-full mb-5 font-roboto">Contact Us</h1>
-          <p class="text-xl mb-5 font-light w-2/3">Medfins International LLP. 29, 142 Sector Noida , Uttar Pradesh - 201301 India</p>
-          <a class="mb-5" href="tel:+917042028042"><i class="fa-solid mr-2 fa-sm fa-phone"></i>7042028042</a>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.501236892!2d77.23701428938786!3d28.52210235097899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1696953211026!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
-    <div class="w-full bg-gray-950 flex justify-center p-5 items-center h-14">
-        <h1 class="text-gray-300 text-l font-light">© 2023 MEDFINS – All Rights Reserved.</h1>
       </div>
+      <div class="flex flex-col px-5 md:px-32 py-10 md:py-20 justify-start items-start ">
+        <h1 class="text-white mb-5 md:mb-10 font-light text-3xl md:text-5xl">We define the concept to develop</h1>
+        <p class="text-white text-l md:text-xl">Before moving on to technical development, we represent the concept to develop. We define requirements, product architecture, manufacturing strategy, and what we have to evaluate. We seek to reduce uncertainties and risks to a minimum.</p>
+        <div class="flex flex-wrap gap-5 md:gap-0 pt-10 md:pt-20 items-start">
+            <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-full md:w-[35rem] h-[18rem] md:h-[25rem] md:ml-5 py-10 px-10">
+                <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">Functional architecture</h1>
+                <p class="text-white font-ubuntu text-l md:text-xl ">We create images of the elements we will integrate using 2D and 3D schematics. The diagrams help us to suggest placement options, as well as to visualize interactions and specific actions the product allows.</p>
+            </div>
+            <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-full md:w-[35rem] h-[18rem] md:h-[25rem] md:ml-5 md:mt-5 py-10 px-10">
+                <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">Ergonomic analysis</h1>
+                <p class="text-white font-ubuntu text-l md:text-xl ">Thanks to realistic proportions mock-ups, we consider the scale, ergonomics, handling, and elements we will integrate.</p>
+            </div>
+            <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-full md:w-[35rem] h-[18rem] md:h-[25rem] md:ml-5 py-10 px-10">
+                <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">Formative evaluation</h1>
+                <p class="text-white font-ubuntu text-l md:text-xl ">Testing the concept helps us identify the user interface strengths and weaknesses to suggest improvements. Our goal is to correct usability flaws.</p>
+            </div>
+            <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-full md:w-[35rem] h-[18rem] md:h-[25rem] md:ml-5 py-10 md:mt-5 px-10">
+                <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">Cost estimate</h1>
+                <p class="text-white font-ubuntu text-l md:text-xl ">To remain aligned with the client’s expectations, we evaluate solution costs according to the manufacturing methods.</p>
+            </div>
+            <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-full md:w-[35rem] h-[18rem] md:h-[25rem] md:ml-5 py-10 px-10">
+                <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">Physical Prototypes</h1>
+                <p class="text-white font-ubuntu text-l md:text-xl ">We also participate in the design of physical products by simulating their use through prototypes: cardboard mock-ups, 3D printing, interfaces manufactured by several 2D prints, etc.</p>
+            </div>
+            <div class=" flex rounded-xl flex-col justify-center items-start bg-cyan-700 w-full md:w-[35rem] h-[18rem] md:h-[25rem] md:ml-5 py-10 md:mt-5 px-10">
+                <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">Photorealistic renderings</h1>
+                <p class="text-white font-ubuntu text-l md:text-xl ">We can create ultra-realistic product 3D renderings useful for marketing materials.</p>
+            </div>
+        </div>
+  </div>
+  <div class="flex flex-col-reverse md:flex-row pb-10 md:pb-0 justify-center bg-slate-400 items-center">
+    <div class="flex-flex-col px-5 md:pl-20 justfy-center items-start text-black">
+        <h1 class="text-black md:w-11/12 mb-5 md:mb-10 font-light text-3xl md:text-5xl">Harnessing the power of digital technology while remaining grounded to reality</h1>
+        <p class="text-black mb-5 text-l md:text-xl md:w-3/5 ">Our industrial designers are agile and know how to use the communication and design tools at their disposal judiciously. Depending on the need, they go back and forth between 3D modeling and prototypes to guide the concept.</p>
+    </div>
+    <img class="md:w-1/2 mb-10 md:mb-0" src="../assets/images/Regulatory Affairs/financial-managers-work.jpg" alt="img">
+  </div>
+  <div class="flex flex-col relative px-5 md:px-44 py-10 md:py-20 justify-start items-start">
+    <h1 class="text-white md:w-11/12 md:mb-10 mb-5 font-light text-3xl md:text-5xl">We deal with complexity thanks to our multidisciplinary team strength</h1>
+    <p class="text-white text-l md:text-xl md:w-3/5 ">Our industrial designers work in close collaboration with our engineers and developers right from the project beginning. This multidisciplinarity leads to decision-making efficiency and a more harmonious formal mechanical and electronic components integration.</p>
+    <div class="flex py-10 flex-col md:flex-row items-start">
+        <div class=" flex rounded-xl flex-col justify-center items-start bg-zinc-500 w-full md:w-[25rem] h-[18rem] md:h-[30rem] md:ml-5 py-10 px-7">
+            <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">An industrial design mastery for the medical field</h1>
+            <p class="text-white font-ubuntu text-l md:text-xl ">Our designers are medical instruments and devices design experts with field experience with medical professionals.</p>
+        </div>
+        <div class=" flex rounded-xl flex-col justify-center items-start bg-zinc-500 w-full md:w-[25rem] h-[18rem] md:h-[30rem] md:ml-5 mt-5 py-10 px-7">
+            <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">An iterative and collaborative approach</h1>
+            <p class="text-white font-ubuntu text-l md:text-xl ">Throughout the process, we make the product evolve. We like collaborating transparently with the client and conducting physical tests to align our design choices.</p>
+        </div>
+        <div class=" flex rounded-xl flex-col justify-center items-start bg-zinc-500 w-full md:w-[25rem] h-[18rem] md:h-[30rem] md:ml-5 py-10 mt-10 px-7">
+            <h1 class="text-white mb-5 font-roboto text-3xl md:text-5xl">A holistic approach to designing a relevant product</h1>
+            <p class="text-white font-ubuntu text-l md:text-xl ">Our work starts long before the product takes shape. To make it relevant, we pay particular attention to the market, the user, the context, the physical aspect, the risks, and the requirements.</p>
+        </div>
+    </div>
+</div>
+<footer id="footer" class="pb-10 bg-black flex flex-col justify-around items-center md:flex-row md:px-28 md:pb-20">
+    <div class="flex px-5 pt-10 flex-shrink-0 flex-col md:w-1/3 md:px-0 md:pt-0">
+      <img src="../assets/logo/Medfins LOGO white.png" class="w-36 mb-5" alt="logo">
+      <p class="text-xl text-gray-200">We encourage positive, fun and authentic collaboration, while placing a high value on people.</p>
+      <div class="flex mt-10 justify-around w-1/2 items-center">
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands text-white fa-xl smooth-hover fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="flex px-5 pt-10 flex-col justify-start items-start md:w-1/3">
+      <h1 class="text-2xl text-white h-full mb-5 underline font-roboto">Expertise</h1>
+      <div class="left text-white flex flex-col justify-around items-start font-light text-l">
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="inovationStrategy.html">Innovation Strategy</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="humanFactors&UserExperience.html">Human Factors & User Experience</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="userInterfaceDesign.html">User Interface Design</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="industrialDesign.html">Industrial Design</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="mechanicalEngineering.html">Mechanical Engineering</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="electronicEngineering.html">Electronic Engineering</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="embeddedSoftwareDevelopment.html">Embedded Software Development</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="softwareDevelopment.html">Software Development</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="manufacturingSupport&Sourcin.html">Manufacturing Support and Sourcing</a>
+        <a class="mb-[1rem] tracking-wide hover:text-gray-400" href="qualityAssurance&RegulatoryCompliance.html">Quality Assurance & Regulatory Compliance</a>
+      </div>
+    </div>
+    <div class="flex px-5 pt-14 flex-col text-white md:w-1/3">
+      <h1 class="text-3xl underline text-white h-full mb-5 font-roboto">Contact Us</h1>
+      <p class="text-xl mb-5 font-light md:w-2/3">Medfins International LLP,<br> 29 142 Sector Noida,<br>Uttar Pradesh - 201301, <br>India.</p>
+      <a class="mb-2" href="tel:+917042028042"><i class="fa-solid mr-2 fa-sm fa-phone"></i>(+91) 7042028042</a>
+      <a class="mb-5" href="mailto:info@medfinsinternational.com"><i class="fa-solid fa-sm mr-2 fa-envelope"></i>info@medfinsinternational.com</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357.501236892!2d77.23701428938786!3d28.52210235097899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1696953211026!5m2!1sen!2sin" class="w-[300px] md:w-[400px]" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+<div class="w-full bg-gray-950 flex justify-center p-5 items-center h-14">
+  <h1 class="text-gray-300 text-l font-light">© 2023 MEDFINS – All Rights Reserved.</h1>
+</div>
 <script src="../app.js"></script>
 </body>
 </html>
