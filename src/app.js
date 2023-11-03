@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
     function typeWriting() {
         const element = document.querySelector('.type');
-        if (isInViewport(element) && window.screen.width >= 767) {
+       
+        if (isInViewport(element) && window.screen.width >= 1300) {
             element.classList.add('typewriter');
             window.removeEventListener('scroll', typeWriting);
         }
